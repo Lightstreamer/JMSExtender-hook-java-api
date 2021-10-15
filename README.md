@@ -1,6 +1,6 @@
 # The Lightstreamer JMS Extender Hook Java API
 
-The Lightstreamer JMS Extender Hook API for Java is a custom pluggable component which provides a powerful extension mechanism to integrate your own authentication and authorization functionalities into the Lightstreamer JMS Extender server.
+The Lightstreamer JMS Extender Hook API for Java is a custom pluggable component which provides a powerful extension mechanism to integrate your own authentication and authorization functionalities into the [Lightstreamer JMS Extender](https://lightstreamer.com/download/#jms210) server.
 
 The Lightstreamer JMS Extender Hook Java API lets you easily develop any Hook, which will be then packaged and deployed into theLightsreamer JMS Extender installation. Once loaded inside the running server process, it will be able to intercept specific events originated from the client side in order to apply fine-grained custom authorization checks as per your own security needs.
 
