@@ -6,30 +6,19 @@ The Lightstreamer JMS Extender Hook Java API lets you easily develop any Hook, w
 
 # Using the API
 
-The library jar is deployed on a Maven repository at https://www.lightstreamer.com/repo/maven
-
-To include the library in a custom project, using any maven-compatible build tool (e.g. Maven, Gradle, Ivy, etc.) it is necessary to configure both a pointer to the external repository and the reference to the lib itself.
+The library is deployed on a Maven repository.
+To include the library in a custom project, using any maven-compatible build tool (e.g. Maven, Gradle, Ivy, etc.) it is necessary to proper configure the dependency to the library.
 
 ### Maven
 
 Add the following dependency to the pom.xml file:
 
 ```xml
-<repositories>
-  <repository>
-    <id>lightstreamer</id>
-    <name>Lightstreamer repository</name>
-    <url>https://www.lightstreamer.com/repo/maven</url>
-  </repository>
-</repositories>
-
-<dependencies>
   <dependency>
     <groupId>com.lightstreamer</groupId>
     <artifactId>ls-jms-hook-java-api</artifactId>
     <version>2.0.0</version>
   </dependency>
-</dependencies>
 ```        
 
 ### Gradle
@@ -37,12 +26,6 @@ Add the following dependency to the pom.xml file:
 Update the dependencies section of the build.gradle file with the following declaration:
 
 ```xml
-repositories {
-    maven {
-        url "https://www.lightstreamer.com/repo/maven"
-    }
-}
-
 dependencies {
     compile 'com.lightstreamer:ls-jms-hook-java-api:2.0.0'
 }
@@ -53,12 +36,12 @@ dependencies {
 Add the following dependency to the ivy.yml file:
 
 ```xml
-<ibiblio name="lightstreamer" m2compatible="true" root="https://www.lightstreamer.com/repo/maven/"/>
-
 <dependency org="com.lightstreamer" name="ls-jms-hook-java-api" rev="2.0.0"/>
 ```
 
 # External Links
+
+- [Maven Repository](https://mvnrepository.com/artifact/com.lightstreamer/ls-jms-hook-java-api)
 
 - [Examples](https://demos.lightstreamer.com/?p=jmsextender&t=hook&a=javahook)
 
